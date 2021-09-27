@@ -2,7 +2,7 @@ package com.example;
 
 import com.example.api.APIQueryHandler;
 import com.example.api.UrlRequest;
-import com.example.data.ConfigData;
+    import com.example.data.ConfigData;
 import java.io.BufferedReader;
 import java.io.File;
 import java.io.IOException;
@@ -71,11 +71,11 @@ public class Main {
         t.printStackTrace();
       }
 
-      List<String> paramStrings = Arrays.asList(data).subList(1, data.length);
-      HashMap<String, String> params = new HashMap<>();
+         List<String> paramStrings = Arrays.asList(data).subList(1, data.length);
+         HashMap<String, String> params = new HashMap<>();
 
       for (String i : paramStrings) {
-        String[] vals = i.split(":");
+          String[] vals = i.split(":");
         params.put(vals[0], vals[1]);
       }
 
